@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-light fixed-top">
+    <!-- <nav class="navbar navbar-expand-md navbar-dark bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="/images/Group 1198.svg"></a>
             <img src="/images/Path 629 (2).svg">
@@ -106,7 +106,7 @@
                     et dolore magna aliqua.</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="row">
         <div class="col-md-5 col-sm">
@@ -121,19 +121,21 @@
                     <div class="form-group row">
                         <div class="col-md-10">
                             <input type="text" class="form-control" id="fullname" name="fullname"
-                                placeholder="Full Name*">
+                                placeholder="Full Name*" required>
                             <small id="namehelp" class="form-text text-muted">This field is required</small>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-md-10">
-                            <input type="text" class="form-control" id="email" name="email" placeholder="Email*">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email*"
+                                required>
                             <small id="mailhelp" class="form-text text-muted">This field is required</small>
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-md-10">
-                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone*">
+                            <input type="tel" class="form-control" id="phone" name="phone"
+                                pattern="[0-9]{3} [0-9]{3} [0-9]{4}" placeholder=" Phone*" required>
                             <small id="phonehelp" class="form-text text-muted">This field is required</small>
                         </div>
                     </div>
@@ -176,16 +178,19 @@
                             <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
                             <label class="form-check-label" for="inlineCheckbox2">Option 2</label>
                         </div>
+
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Send Feedback</button>
-
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary">
+                    </div>
 
                 </form>
             </div>
         </div>
     </div>
-    <footer class="footer">
+
+    <!-- <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-6 col-sm-2 justify-content-center">
@@ -206,7 +211,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
